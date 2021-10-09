@@ -23,7 +23,7 @@
             left: 0;
             right: 0;
         }
-        div {
+        .wrapper {
             margin:auto;
             margin-left: 8%;
             margin-right: 8%;
@@ -35,6 +35,7 @@
             margin-bottom: 50px;
             background-color: #EED974;
             border-radius: 30px;
+            min-width: 1220px;
         }
         img {
             max-width: 100%;
@@ -42,7 +43,13 @@
             display: block;
             margin: auto;
         }
-        
+        .steps {
+            width: 100%;
+        }
+        .steps .steps-item {
+            display: inline;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
@@ -54,16 +61,15 @@
         </h1>
     </header>
     <body>
-        <div>
+        <div class="wrapper">
             <p><strong>LNTU GPA Calculator</strong>(辽工大GPA计算器)是基于前端的纯本地计算工具。页面加载完成后可离线使用，无数据泄露之忧。操作方便快捷，计算结果精准翔实，对您的婚姻幸福、家庭和睦等大有裨益，是您居家旅行、恋爱交友的必备工具。</p>
             <p>&nbsp;</p>
             <h3><i class="icofont-book-mark"></i>获取教务在线成绩文档</h3>
-            <div1>
-                <p>&nbsp&nbsp1	登录教务在线: <strong><a href='http://202.199.224.119:8080/eams/loginExt.action' target='_blank' class='url'>http://202.199.224.119:8080/eams/loginExt.action</a></strong>(保持打开)</p>
-                <p>&nbsp&nbsp2	打开成绩数据获取页面:<a href='http://202.199.224.119:8080/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR' target='_blank' class='url'>http://202.199.224.119:8080/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR</a></p>
-            
-
-            </div1>
+            <div class="steps">
+                <p class="steps-item">&nbsp&nbsp1	登录教务在线: <strong><a href='http://202.199.224.119:8080/eams/loginExt.action' target='_blank' class='url'>http://202.199.224.119:8080/eams/loginExt.action</a></strong>(保持打开)</p>
+                <br>
+                <p class="steps-item">&nbsp&nbsp2	打开成绩数据获取页面:<a href='http://202.199.224.119:8080/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR' target='_blank' class='url'>http://202.199.224.119:8080/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR</a></p>
+            </div>
             <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="icofont-checked"></i>获取成功:</p>
             <p>&nbsp;</p>
             <p><img src=".\static\SamplePage.png" referrerpolicy="no-referrer" alt="SamplePage"></p>
@@ -78,7 +84,7 @@
             <p><img src=".\static\SavePage.png" referrerpolicy="no-referrer" alt="SavePage"></p>
             <p>&nbsp;</p>
             <h3><i class="icofont-book-mark"></i>上传并计算学分绩</h3>
-            <p>&nbsp&nbsp1	打开<a href="https://gpa.xcland.tech"><strong>LNTU GPA Calculator</strong>(辽工大GPA计算器)</a>主页，点击选择文件将刚刚保存的html成绩文件上传</p>
+            <p>&nbsp&nbsp1	打开<strong>LNTU GPA Calculator</strong>(辽工大GPA计算器)主页，点击选择文件将刚刚保存的html成绩文件上传</p>
             <p>&nbsp&nbsp2	点击计算成绩</p>
             <p>&nbsp&nbsp3	查看结果</p>
         </div>
