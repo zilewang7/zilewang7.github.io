@@ -33,6 +33,13 @@
             word-wrap: break-word;
         }
 
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: auto;
+        }
+
         .wrapper {
             margin: auto;
             margin-left: 8%;
@@ -48,11 +55,9 @@
             min-width: 70%;
         }
 
-        img {
-            max-width: 100%;
-            max-height: 100%;
-            display: block;
-            margin: auto;
+        .leader {
+            text-decoration: none;
+            color: #000;
         }
 
         .steps {
@@ -69,99 +74,98 @@
             margin: auto;
         }
 
-        a:link {
+
+        div a:link {
             color: #fff97c
         }
 
-        a:visited {
+        div a:visited {
             color: #99954a
         }
 
-        a:hover {
+        div a:hover {
             color: #81ffe6
         }
 
-        a:active {
+        div a:active {
             color: #5ab2a1
-        }
-
-        :focus {
-            outline: #ddf4ff
         }
     </style>
 </head>
 
-<body>
 
+
+<body>
     <header>
-        <h1 align="center">
-            <i class="icofont-question-square" color="#32B67A"></i>
-            使用指北
-        </h1>
+        <a href="#" class="leader">
+            <h1 align="center">
+                <i class="icofont-question-square" color="#32B67A"></i>
+                使用指北
+            </h1>
+        </a>
     </header>
 
-    <body>
-        <div class="wrapper">
-            <p><a href="https://gpa.xcland.tech/"><strong>LNTU GPA
-                        Calculator</strong></a>(辽工大GPA计算器)是基于前端的纯本地计算工具。页面加载完成后可离线使用，无数据泄露之忧。操作方便快捷，计算结果精准翔实，对您的婚姻幸福、家庭和睦等大有裨益，是您居家旅行、恋爱交友的必备工具。
+    <div class="wrapper">
+        <p><a href="https://gpa.xcland.tech/"><strong>LNTU GPA
+                    Calculator</strong></a>(辽工大GPA计算器)是基于前端的纯本地计算工具。页面加载完成后可离线使用，无数据泄露之忧。操作方便快捷，计算结果精准翔实，对您的婚姻幸福、家庭和睦等大有裨益，是您居家旅行、恋爱交友的必备工具。
+        </p>
+        <p>&nbsp;</p>
+        <h3><i class="icofont-book-mark"></i>获取教务在线成绩文档</h3>
+        <div class="steps">
+            <h4>校内</h4>
+            <p class="steps-item">&nbsp&nbsp1 登录教务在线: <strong><a href='http://202.199.224.119:8080/eams/loginExt.action'
+                        target='_blank' class='url'>http://202.199.224.119:8080/eams/loginExt.action</a></strong>(保持打开)
             </p>
-            <p>&nbsp;</p>
-            <h3><i class="icofont-book-mark"></i>获取教务在线成绩文档</h3>
-            <div class="steps">
-                <h4>校内</h4>
-                <p class="steps-item">&nbsp&nbsp1 登录教务在线: <strong><a
-                            href='http://202.199.224.119:8080/eams/loginExt.action' target='_blank'
-                            class='url'>http://202.199.224.119:8080/eams/loginExt.action</a></strong>(保持打开)</p>
-                <br>
-                <p class="steps-item">&nbsp&nbsp2 打开成绩数据获取页面:<a
-                        href='http://202.199.224.119:8080/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR'
-                        target='_blank'
-                        class='url'>http://202.199.224.119:8080/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR</a>
-                </p>
-                <h4>校外</h4>
-                <p class="steps-item">&nbsp&nbsp1 登录WebVPN与教务在线: <strong><a href='https://webvpn.lntu.edu.cn/login'
-                            target='_blank' class='url'>https://webvpn.lntu.edu.cn/login</a></strong>(保持打开)</p>
-                <br>
-                <p class="steps-item">&nbsp&nbsp2 打开成绩数据获取页面:<a
-                        href='https://webvpn.lntu.edu.cn/http-8080/77726476706e69737468656265737421a1a70fce767e3a043059d8f5/eams/teach/grade/course/person!historyCourseGrade.action?vpn-12-o1-10.21.24.119:8080&projectType=MAJOR'
-                        target='_blank'
-                        class='url'>https://webvpn.lntu.edu.cn/http-8080/77726476706e69737468656265737421a1a70fce767e3a043059d8f5/eams/teach/grade/course/person!historyCourseGrade.action?vpn-12-o1-10.21.24.119:8080&projectType=MAJOR</a>
-                </p>
-            </div>
-            <p>&nbsp;</p>
-            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="icofont-checked"></i>获取成功:</p>
-            <p>&nbsp;</p>
-            <p><img src=".\static\SamplePage.png" referrerpolicy="no-referrer" alt="SamplePage"></p>
-            <p>&nbsp;</p>
-            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="icofont-warning"></i></i>获取失败:</p>
-            <p>&nbsp;</p>
-            <p><img src=".\static\FalsePage.png" alt="FalsePage" style="zoom: 25%;" /></p>
-            <p>&nbsp;</p>
-            <p align="center"><i class="icofont-light-bulb"></i>若获取失败请认真执行步骤1或更换浏览器</p>
-            <p>&nbsp;</p>
-            <p>&nbsp&nbsp3 在成绩页面按下Ctrl+S，并将<strong>.html格式</strong>的文件保存到桌面</p>
-            <p><img src=".\static\SavePage.png" referrerpolicy="no-referrer" alt="SavePage"></p>
-            <p>&nbsp;</p>
-            <h3><i class="icofont-book-mark"></i>上传并计算学分绩</h3>
-            <p>&nbsp&nbsp1 打开<a href="https://gpa.xcland.tech/"><strong>LNTU GPA
-                        Calculator</strong></a>(辽工大GPA计算器)主页，点击选择文件将刚刚保存的html成绩文件上传</p>
-            <p>&nbsp&nbsp2 点击计算成绩</p>
-            <p>&nbsp&nbsp3 查看结果</p>
-            <p>&nbsp;</p>
-            <h3><i class="icofont-book-mark"></i>教学视频</h3>
-            <div class=video style="position: relative; padding: 30% 45%;">
-                <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
-                    src="https://player.bilibili.com/player.html?aid=636517678&bvid=BV1fb4y1x74N&cid=508850508&page=1&as_wide=1&high_quality=1&danmaku=1"
-                    frameborder="no" scrolling="no" allowfullscreen="true">
-                </iframe>
-            </div>
-            <p>&nbsp;</p>
-            <h3><i class="icofont-group"></i>反馈QQ群:
-                <a href="https://jq.qq.com/?_wv=1027&k=7fJzPgou">
-                    930085387
-                </a>
-            </h3>
+            <br>
+            <p class="steps-item">&nbsp&nbsp2 打开成绩数据获取页面:<a
+                    href='http://202.199.224.119:8080/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR'
+                    target='_blank'
+                    class='url'>http://202.199.224.119:8080/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR</a>
+            </p>
+            <h4>校外</h4>
+            <p class="steps-item">&nbsp&nbsp1 登录WebVPN与教务在线: <strong><a href='https://webvpn.lntu.edu.cn/login'
+                        target='_blank' class='url'>https://webvpn.lntu.edu.cn/login</a></strong>(保持打开)</p>
+            <br>
+            <p class="steps-item">&nbsp&nbsp2 打开成绩数据获取页面:<a
+                    href='https://webvpn.lntu.edu.cn/http-8080/77726476706e69737468656265737421a1a70fce767e3a043059d8f5/eams/teach/grade/course/person!historyCourseGrade.action?vpn-12-o1-10.21.24.119:8080&projectType=MAJOR'
+                    target='_blank'
+                    class='url'>https://webvpn.lntu.edu.cn/http-8080/77726476706e69737468656265737421a1a70fce767e3a043059d8f5/eams/teach/grade/course/person!historyCourseGrade.action?vpn-12-o1-10.21.24.119:8080&projectType=MAJOR</a>
+            </p>
         </div>
-    </body>
+        <p>&nbsp;</p>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="icofont-checked"></i>获取成功:</p>
+        <p>&nbsp;</p>
+        <p><img src=".\static\SamplePage.png" referrerpolicy="no-referrer" alt="SamplePage"></p>
+        <p>&nbsp;</p>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="icofont-warning"></i></i>获取失败:</p>
+        <p>&nbsp;</p>
+        <p><img src=".\static\FalsePage.png" alt="FalsePage" style="zoom: 25%;" /></p>
+        <p>&nbsp;</p>
+        <p align="center"><i class="icofont-light-bulb"></i>若获取失败请认真执行步骤1或更换浏览器</p>
+        <p>&nbsp;</p>
+        <p>&nbsp&nbsp3 在成绩页面按下Ctrl+S，并将<strong>.html格式</strong>的文件保存到桌面</p>
+        <p><img src=".\static\SavePage.png" referrerpolicy="no-referrer" alt="SavePage"></p>
+        <p>&nbsp;</p>
+        <h3><i class="icofont-book-mark"></i>上传并计算学分绩</h3>
+        <p>&nbsp&nbsp1 打开<a href="https://gpa.xcland.tech/"><strong>LNTU GPA
+                    Calculator</strong></a>(辽工大GPA计算器)主页，点击选择文件将刚刚保存的html成绩文件上传</p>
+        <p>&nbsp&nbsp2 点击计算成绩</p>
+        <p>&nbsp&nbsp3 查看结果</p>
+        <p>&nbsp;</p>
+        <h3><i class="icofont-book-mark"></i>教学视频</h3>
+        <div class=video style="position: relative; padding: 30% 45%;">
+            <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+                src="https://player.bilibili.com/player.html?aid=636517678&bvid=BV1fb4y1x74N&cid=508850508&page=1&as_wide=1&high_quality=1&danmaku=1"
+                frameborder="no" scrolling="no" allowfullscreen="true">
+            </iframe>
+        </div>
+        <p>&nbsp;</p>
+        <h3><i class="icofont-group"></i>反馈QQ群:
+            <a href="https://jq.qq.com/?_wv=1027&k=7fJzPgou">
+                930085387
+            </a>
+        </h3>
+    </div>
+</body>
 
 </html>
